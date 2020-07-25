@@ -5,8 +5,7 @@ from config import MainConfig, DB
 
 
 bot = telebot.TeleBot(MainConfig.bot_key)
-
-
+db = DB()
 
 
 
@@ -15,7 +14,6 @@ bot = telebot.TeleBot(MainConfig.bot_key)
 
 @bot.message_handler()
 def routes(message):
-    db = DB()
     db.connect()
     # created connection
     user_id = message.from_user.id
