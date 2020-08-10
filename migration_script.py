@@ -1,9 +1,17 @@
 import mysql.connector
+import os,sys
+from dotenv import load_dotenv
+home = os.getcwd()
+dotenv_path = os.path.join(home, 'variables.env')
+if os.path.exists(dotenv_path):
+    load_dotenv(dotenv_path)
+else:
+    print('variables wasnt found')
 
-dbconfig = {'host': '95.181.198.40',
-            'user': 'root',
-            'password': 'scartown89',
-            'database': 'TEST'}
+dbconfig = {'host': os.environ['HOST'],
+            'user': os.environ['USER'],
+            'password': os.environ['PASSWORD_DB'],
+            'database': os.environ['DATA_BASE_NAME']}
 conn = mysql.connector.connect(**dbconfig)
 cursor = conn.cursor()
 _show_tables = """show tables"""

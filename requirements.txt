@@ -4,6 +4,10 @@
 # C:\Users\eyagudin\Desktop\TelegramBot\migration_script.py: 1
 mysql_connector_python == 8.0.20
 
+# C:\Users\eyagudin\Desktop\TelegramBot\config.py: 4
+# C:\Users\eyagudin\Desktop\TelegramBot\migration_script.py: 3
+python_dotenv == 0.14.0
+
 # C:\Users\eyagudin\Desktop\TelegramBot\bot.py: 1
 # C:\Users\eyagudin\Desktop\TelegramBot\notification.py: 4
 telebot == 0.0.3

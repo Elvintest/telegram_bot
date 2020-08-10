@@ -1,3 +1,4 @@
 /.idea/
 __pycache__
 debug_db.py
+variables.env
