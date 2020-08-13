@@ -13,7 +13,7 @@ else:
 
 class MainConfig:
     dbconfig = {'host': os.environ['HOST'],
-                'user': os.environ['USER'],
+                'user': os.environ['DB_USER'],
                 'password': os.environ['PASSWORD_DB'],
                 'database': os.environ['DATA_BASE_NAME'],
                 'charset': 'utf8',

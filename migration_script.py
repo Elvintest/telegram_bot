@@ -8,7 +8,7 @@ if os.path.exists(dotenv_path):
 else:
     print('variables wasnt found')
 
-dbconfig = {'host': os.environ['HOST'],
+dbconfig = {'host': os.environ['DB_USER'],
             'user': os.environ['USER'],
             'password': os.environ['PASSWORD_DB'],
             'database': os.environ['DATA_BASE_NAME']}
